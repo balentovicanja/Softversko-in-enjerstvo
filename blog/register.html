@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="hr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Registracija - Čitaj & Pričaj</title>
+    <link rel="stylesheet" href="register.css">
+</head>
+<body>
+    <div class="container">
+        <div class="sidebar-left"></div>
+        <div class="content">
+            <header>
+                <h1>Čitaj & Pričaj</h1>
+            </header>
+            <main>
+                <div class="register-form">
+                    <form onsubmit="registerNewUser(event)">
+                        <label for="name">Ime:</label>
+                        <input type="text" id="name" name="name">
+                        <label for="surname">Prezime:</label>
+                        <input type="text" id="surname" name="surname">
+                        <label for="email">E-mail:</label>
+                        <input type="email" id="email" name="email">
+                        <label for="username">Username:</label>
+                        <input type="text" id="username" name="username" required>
+                        <label for="password">Lozinka:</label>
+                        <input type="password" id="password" name="password" required>
+                        <label for="confirm-password">Ponovi lozinku:</label>
+                        <input type="password" id="confirm-password" name="confirm-password" required>
+                        <button>Registriraj</button>
+                    </form>
+                </div>
+            </main>
+        </div>
+        <div class="sidebar-right"></div>
+    </div>
+    <script src="register.js"></script>
+</body>
+</html>
